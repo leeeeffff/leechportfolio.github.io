@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'HalfTermSchoolsOut';
+    src: url('../fonts/HalfTermSchoolsOut-V4q5l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+  font-family: 'BemirsDemo';
+  src: url('../fonts/BemirsDemoVersionRegular-L360Z.ttf') format('truetype'),
+       url('../fonts/BemirsDemoVersionRegular-X361d.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+margin: 0; 
+padding: 0; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F9F7EA;
+  height: 80px;
+  width: 100%; 
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-family: 'BemirsDemo', sans-serif;
+}
+
+.leftSide img {
+  height: 70px;
+}
+
+.middle {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  left:20%;
+}
+
+.middle a {
+  text-decoration: none;
+  color: #75756e;
+  font-weight: bold;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.middle a:hover {
+  color: #000000;
+}
+
+
+.middle a.active-link {
+  color: #000000; /* Optional: Change color when active */
+  border-bottom: 2px solid #000000; 
+  animation: slide 1s ease;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vertical-line {
+  width: 3px;
+  height: 50px;
+  background-color: #75756e;
+  position: absolute;
+  left:60%;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  position: absolute;
+  left:92%;
+  top:27px;
+}
+
+.rotate-ppot {
+  font-size: 25px;
+  position: absolute;
+  top:10px;
+  left: -300px;
+  font-weight: bold;
+  color: #75756e;
+  animation: slideIn 0.3s ease;
+}
+
+
+.portfolio-submenu {
+  position: absolute;
+  right: 0;
+  top: 100%; /* Places the submenu directly below the navbar */
+  background-color: #f9f7ea;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+.aboutme-submenu {
+  position: absolute;
+  right: 89px;
+  top: -18px; /* Places the submenu directly below the navbar */
+  background-color: #f9f7ea;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 60px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+.portfolio-submenu a, .aboutme-submenu a {
+  text-decoration: none;
+  color: #75756e;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.portfolio-submenu a:hover, .aboutme-submenu a:hover {
+  color: #000000;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.github1 {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease; 
+}
+
+.insta1 {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease; 
+}
+
+.linkedin1 {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease; 
+}
+
+.linkedin1:hover {
+  transform: translate(-5px, -5px);
+}
+
+.insta1:hover {
+  transform: translate(-5px, -5px);
+}
+
+.github1:hover {
+  transform: translate(-5px, -5px);
+}
+
+.email-display {
+  margin-top: 11px;
+  margin-left: -380px;
+  font-size: 25px;
+  color: #75756e;
+  font-weight: bold;
+  animation: slideIn 0.3s ease;
+}

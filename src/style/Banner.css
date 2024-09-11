@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'CsClaireMono';
+    src: url('../fonts/CsClaireMonoDemoRegular-0vdyX.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner {
+    background-color: #F9F7EA;
+    padding: 130px 0;
+    position: relative;
+    font-family: 'CsClaireMono', sans-serif;
+    margin-left: 90px;
+  }
+  
+  .banner .tagline {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .banner h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .banner .wrap {
+    color: #ff6f61;
+  }
+  
+  .banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .banner button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner button:hover {
+    background-color: #ff4b4b;
+  }
+  
+  .banner img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 32px;
+    }
+  
+    .banner p {
+      font-size: 20px;
+      max-width: 100%;
+    }
+  
+  }
+  

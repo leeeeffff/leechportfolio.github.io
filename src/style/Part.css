@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'BemirsDemo';
+    src: url('../fonts/BemirsDemoVersionRegular-L360Z.ttf') format('truetype'),
+         url('../fonts/BemirsDemoVersionRegular-X361d.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html, body {
+    height: 100%;
+}
+
+
+  .competition-info h2 {
+    font-family: 'BemirsDemo', sans-serif;
+    font-weight: bold;
+  }
+
+.Part-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F7EA;
+    margin-top: 30px;
+    min-height: 65.3vh; 
+  }
+  
+  .horizontal-line {
+    width: 80%;
+    height: 6px;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .point {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: -18.5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .point:hover {
+    background-color: rgb(75, 128, 118);
+    transform: scale(2); 
+    box-shadow: 0px 10px 100px 20px #43766C;
+    
+  }
+  
+  .point.active {
+    background-color: #335851;
+    box-shadow: 0px 10px 100px 20px #43766C;
+    transform: scale(1.3); 
+  }
+
+  .point:nth-child(1) {
+    left: 0;
+    animation: popdown12 0.75s ease-in-out forwards;
+  }
+  
+  .point:nth-child(2) {
+    left: 33%;
+    animation: popdown12 1s ease-in-out forwards;
+  }
+  
+  .point:nth-child(3) {
+    left: 66%;
+    animation: popdown12 1.25s ease-in-out forwards;
+  }
+  
+  .point:nth-child(4) {
+    left: 98%;
+    animation: popdown12 1.5s ease-in-out forwards;
+  }
+  
+  .competition-info-container {
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .competition-info {
+    margin-top: 40px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    display: none;
+    position: relative;
+    animation: popup12 1s ease-in-out forwards;
+  }
+  
+  .competition-info.active {
+    display: block;
+  }
+  
+  @keyframes popup12 {
+    0% {
+      transform: translateY(500px);
+    }
+    50% {
+
+      transform: translateY(-20px);
+    }
+
+    75% {
+
+        transform: translateY(20px);
+      }
+    100% {
+
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes popdown12 {
+    0% {
+      transform: translateY(-500px);
+    }
+    50% {
+
+      transform: translateY(20px);
+    }
+
+    75% {
+
+        transform: translateY(-20px);
+      }
+    100% {
+
+      transform: translateY(0px);
+    }
+  }
+
+  .progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #43766C;
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+  
+  .progress {
+    width: 0%;
+  }
+  
+  .progress-2 {
+    width: 33%;
+  }
+  
+  .progress-3 {
+    width: 66%;
+  }
+
+  .progress-4 {
+    width: 100%;
+  }
+  
+  .competition-info h2.title {
+    font-family: 'BemirsDemo', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem; /* Larger title font size */
+    margin-bottom: -15px;
+    
+}
+
+.competition-info h3.subtitle {
+    font-family: 'BemirsDemo', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem; /* Smaller subtitle under title */
+    margin-bottom: 15px;
+    color: #43766C; /* Optional color for the subtitle */
+}
+
+.competition-info p.description {
+    font-size: 1.2rem; /* Regular size for the description text */
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.competition-info img.competition-image {
+    width: 300px; /* Change the image size here */
+    margin-top: 100px;
+}
+
+/* If you want the images to be smaller */
+.images img {
+    max-width: 300px;
+}

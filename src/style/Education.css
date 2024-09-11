@@ -1,0 +1,231 @@
+.education {
+  position: relative; /* Adjust as needed for positioning */
+  width: 100%; /* Full width */
+  padding: 50px 20px;
+  color: #333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+
+
+.high-school-button,
+.unsw-button,
+.uoft-button {
+  margin-left: -1300px; /* Keep text on the left */
+  font-size: 60px;
+  cursor: pointer;
+  color: #75756e; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  position: relative; /* Position relative for absolute positioning of the image */
+}
+
+.university-button,
+.uoft-button,
+.unsw-button {
+  margin-top: 70px; /* Additional margin for the university button */
+}
+
+.high-school-button:hover,
+.uoft-button:hover,
+.unsw-button:hover {
+  color: #000000;
+}
+
+
+.high-school-content,
+.university-content,
+.university1-content {
+  margin-left: 100px; /* Content margin */
+  margin-top: -300px; /* Content margin-top */
+  font-size: 40px; /* Font size for content */
+}
+
+.gis {
+  width: 270px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 0; /* Optional: Add some margin for spacing */
+  margin-left: -370px; /* Moves UNSW to the right */
+  margin-top: -55px; /* Adds space between UOFT and UNSW */
+}
+
+/* Position the UOFT and UNSW images separately */
+.uoft {
+  width: 270px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: -370px; /* Moves UNSW to the right */
+  margin-top: -55px; /* Moves UNSW to the right */
+}
+
+.unsw {
+  width: 230px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: -30px; /* Adds space between UOFT and UNSW */
+  margin-left: -325px; /* Moves UNSW to the right */
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.uoft,
+.gis,
+.uoft-text,
+.uoft-text1,
+.unsw-text0,
+.unsw-text2,
+.gis-text,
+.gis-text1 {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInLeft 1s forwards; /* Apply animation */
+}
+
+.unsw,
+.unsw-text,
+.unsw-text1,
+.unsw-text3,
+.uoft-text0,
+.uoft-text2,
+.gis-text0,
+.gis-text2 {
+  opacity: 0; /* Initially hidden */
+  animation: fadeInRight 1s forwards; /* Apply animation */
+}
+
+.gis-text {
+  font-size: 55px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -250px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.gis-text0 {
+  font-size: 40px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -60px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.gis-text1 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -45px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-family: 'Luxurious Script';
+  font-weight: bold;
+}
+
+.gis-text2 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -30px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.uoft-text {
+  font-size: 55px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -250px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.uoft-text0 {
+  font-size: 40px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -60px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+
+.uoft-text1 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -45px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-family: 'Luxurious Script';
+  font-weight: bold;
+}
+
+.uoft-text2 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -30px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.unsw-text {
+  font-size: 55px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -250px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.unsw-text0 {
+  font-size: 40px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -60px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+
+.unsw-text1 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -45px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-family: 'Luxurious Script';
+  font-weight: bold;
+}
+
+.unsw-text2 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -30px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+
+.unsw-text3 {
+  font-size: 30px; /* Adjust font size */
+  color: #555; /* Text color */
+  margin-top: -30px; /* Space above text */
+  margin-left: 800px; /* Adjust position as needed */
+  font-weight: bold;
+}
+

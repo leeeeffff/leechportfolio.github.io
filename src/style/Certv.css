@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'BemirsDemo';
+    src: url('../fonts/BemirsDemoVersionRegular-L360Z.ttf') format('truetype'),
+         url('../fonts/BemirsDemoVersionRegular-X361d.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @keyframes moveInFromAbove {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px); /* Start 100px above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+  }
+
+  .Certv-container {
+    position: relative;
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #F9F7EA;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 360vh; /* Ensure full viewport height */
+    overflow: hidden; /* Hide blocks when they pass the screen */
+  }
+  
+  .vole {
+    font-size: 10rem;
+    color: #333;
+    font-family: 'BemirsDemo', sans-serif;
+    animation: moveInFromAbove 1s ease forwards;
+    margin-bottom: 0px;
+    margin-top: 00px;
+    z-index: 10;
+    animation: moveInFromAbove 4s ease forwards;
+  }
+  
+  .Vol {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Create the falling block animation */
+  @keyframes fall {
+    0% {
+      top: -100px;
+      opacity: 1;
+    }
+    100% {
+      top: 100vh; /* Fall past the screen */
+      opacity: 0;
+    }
+  }
+  
+  /* Styles for falling blocks */
+  .falling-block {
+    position: absolute;
+    top: -100px; /* Start above the viewport */
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    animation: fall 3s linear infinite;
+    animation-delay: calc(0.5s * var(--i)); /* Add delay for each block */
+    left: calc(100% * var(--i) / 10); /* Spread blocks across the viewport width */
+  }
+  
+  /* Generate multiple blocks with varying speeds */
+  .falling-block:nth-child(1) { --i: 1; }
+  .falling-block:nth-child(2) { --i: 2; }
+  .falling-block:nth-child(3) { --i: 3; }
+  .falling-block:nth-child(4) { --i: 4; }
+  .falling-block:nth-child(5) { --i: 5; }
+  .falling-block:nth-child(6) { --i: 6; }
+  .falling-block:nth-child(7) { --i: 7; }
+  .falling-block:nth-child(8) { --i: 8; }
+  .falling-block:nth-child(9) { --i: 9; }
+  .falling-block:nth-child(10) { --i: 10; }
+  
+  /* Additional animation for text */
+  @keyframes moveInFromAbove {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  

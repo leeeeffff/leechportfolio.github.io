@@ -1,0 +1,22 @@
+/* Home.css */
+@font-face {
+  font-family: 'BemirsDemo';
+  src: url('../fonts/BemirsDemoVersionRegular-L360Z.ttf') format('truetype'),
+       url('../fonts/BemirsDemoVersionRegular-X361d.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.home-container {
+  background-color: #F9F7EA; /* Set your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; /* Full viewport height to center the canvas */
+  margin-top: 50px; /* Adjust this value to move the canvas down */
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}

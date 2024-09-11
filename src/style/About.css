@@ -1,0 +1,469 @@
+
+  .home {
+    position: relative; /* Set the parent to relative to allow absolute positioning of children */
+    margin-top: 20px; 
+    padding: 150px; 
+    background-color: #F9F7EA; 
+    min-height: 65.3vh; 
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Distribute space between the banner and image */
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start vertically */
+    overflow: hidden; 
+}
+
+.home .home-image {
+    max-width: 550px; /* Restrict image width */
+    border-radius: 8px;
+    position: absolute; /* Change to absolute positioning for more control */
+    top: 250px; /* Adjust 'top' to move the image higher or lower */
+    left: 1250px; /* Adjust 'left' to position horizontally */
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  .shake {
+    animation: shake 0.5s;
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      align-items: center; /* Center items horizontally on smaller screens */
+    }
+  
+    .home .home-image {
+      max-width: 300px; /* Adjust max width for smaller screens */
+      margin-top: 20px; /* Add margin above the image */
+      margin-left: 0 !important; /* Reset margin on smaller screens */
+      margin-top: 70px
+    }
+  }
+
+  .moon {
+    max-width: 320px; 
+    position: absolute; 
+    top: 0px;
+    left: 1670px; 
+    animation: slide-in 3s ease-out forwards;
+  }
+
+  @keyframes popup {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+  .jup {
+    max-width: 520px; 
+    position: absolute; 
+    top: -40px;
+    left: -100px;
+    animation: popright 3s ease-out forwards;
+  }
+
+
+  @keyframes popright {
+    0% {
+      transform: translateY(-400px);
+    }
+    50% {
+      transform: translateY(12px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .mars {
+    max-width: 270px; 
+    position: absolute; 
+    top: 80px;
+    left: 900px; 
+    animation: popdown 2s ease-in-out forwards;
+  }
+
+
+  @keyframes popdown {
+    0% {
+      transform: translateY(-500px);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .nep {
+    max-width: 400px; 
+    position: absolute; 
+    top: 780px;
+    left: 500px; 
+    animation: troid-shake 10s infinite;
+    animation: popup 2s ease-in-out forwards;
+  }
+
+  .plus {
+    max-width: 50px; 
+    position: absolute; 
+    top: 800px;
+    left: 300px; 
+    animation: rotate 1s linear infinite;
+  }
+
+  .plus1 {
+    max-width: 50px; 
+    position: absolute; 
+    top: 200px;
+    left: 700px; 
+    animation: rotate 2s linear infinite;
+  }
+
+  .plus2 {
+    max-width: 50px; 
+    position: absolute; 
+    top: 600px;
+    left: 1000px; 
+    animation: rotate 3s linear infinite;
+  }
+
+  .plus3 {
+    max-width: 50px; 
+    position: absolute; 
+    top: 800px;
+    left: 1500px; 
+    animation: rotate 4s linear infinite;
+  }
+
+
+  @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  .diamond_star{
+    max-width: 70px; 
+    position: absolute; 
+    top: 500px;
+    left: 1800px; 
+  }
+
+  .diamond_star1{
+    max-width: 70px; 
+    position: absolute; 
+    top: 400px;
+    left: 1100px; 
+  }
+
+  .diamond_star2{
+    max-width: 70px; 
+    position: absolute; 
+    top: 800px;
+    left: 1300px; 
+  }
+
+  .diamond_star3{
+    max-width: 70px; 
+    position: absolute; 
+    top: 100px;
+    left: 1500px; 
+  }
+
+  .github {
+    max-width: 100px;
+    position: absolute;
+    top: 610px;
+    left: 240px;
+    transition: transform 0.3s ease; 
+  }
+
+  .github:hover {
+    transform: translate(-10px, -10px);
+  }
+
+  .insta {
+    max-width: 102px;
+    position: absolute;
+    top: 610px;
+    left: 430px;
+    transition: transform 0.3s ease; 
+  }
+
+  .insta:hover {
+    transform: translate(-10px, -10px);
+  }
+
+  .linkedin {
+    max-width: 102px;
+    position: absolute;
+    top: 610px;
+    left: 625px;
+    transition: transform 0.3s ease; 
+  }
+
+  .linkedin:hover {
+    transform: translate(-10px, -10px);
+  }
+
+  .smile {
+    max-width: 102px;
+    position: absolute;
+    top: 605px;
+    left: 820px;
+    transition: transform 0.3s ease; 
+  }
+
+  .smile:hover {
+    transform: translate(-10px, -10px);
+  }
+
+  .bigger_rock{
+    max-width: 100px; 
+    position: absolute; 
+    top: 200px;
+    left: 1200px; 
+  }
+
+  .bigger_rock1{
+    max-width: 80px; 
+    position: absolute; 
+    top: 150px;
+    left: 500px; 
+    transform: rotate(60deg);
+  }
+
+  .bigger_rock2{
+    max-width: 90px; 
+    position: absolute; 
+    top: 500px;
+    left: 100px; 
+    transform: rotate(-60deg);
+  }
+
+  @keyframes shine {
+    0%, 100% {
+      transform: scale(1); /* Start and end at original size */
+    }
+    50% {
+      transform: scale(1.2); /* Scale up to 120% of original size */
+    }
+  }
+  
+  /* Apply the animation to diamond stars */
+  .diamond_star,
+  .diamond_star1,
+  .diamond_star2,
+  .diamond_star3 {
+    max-width: 60px; 
+    position: absolute;
+    animation: shine 2s infinite; /* Apply the shine animation */
+  }
+
+  .troid{
+    max-width: 120px; 
+    position: absolute; 
+    top: 20px;
+    left: 1300px; 
+    animation: troid-shake 5s infinite;
+  }
+
+  .troid1{
+    max-width: 120px; 
+    position: absolute; 
+    top: 650px;
+    left: 1800px; 
+    transform: rotate(30deg);
+    animation: troid-shake 5s infinite;
+  }
+
+  .troid2{
+    max-width: 120px; 
+    position: absolute; 
+    top: 620px;
+    left: 70px; 
+    transform: rotate(50deg);
+    animation: troid-shake 5s infinite;
+  }
+
+  .smaller_rock1{
+    max-width: 80px; 
+    position: absolute; 
+    top: 240px;
+    left: 800px; 
+    transform: rotate(50deg);
+    
+  }
+
+  .smaller_rock2{
+    max-width: 70px; 
+    position: absolute; 
+    top: 700px;
+    left: 1100px; 
+    transform: rotate(90deg);
+  }
+
+  .big_plus{
+    max-width: 100px; 
+    position: absolute; 
+    top: 850px;
+    left: 1000px; 
+    transform: rotate(90deg);
+  }
+
+  @keyframes troid-shake {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    20%, 60% {
+      transform: translate(-2px, -2px) rotate(-2deg);
+    }
+    40%, 80% {
+      transform: translate(2px, 2px) rotate(2deg);
+    }
+  }
+
+
+  @keyframes troid-shake1 {
+    0%, 100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    20%, 60% {
+      transform: translate(-3px, -3px) rotate(-8deg);
+    }
+    40%, 80% {
+      transform: translate(3px, 3px) rotate(8deg);
+    }
+  }
+
+
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100vw); /* Start off screen to the right */
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+      transform: translateX(0); /* End at its original position */
+    }
+  }
+
+  .c{
+    max-width: 110px; 
+    position: absolute; 
+    top: 110px;
+    left: 750px; 
+    animation: troid-shake1 10s infinite;
+  }
+
+
+  .cloud{
+    max-width: 110px; 
+    position: absolute; 
+    top: 750px;
+    left: 460px; 
+    z-index: 1;
+    animation: troid-shake1 11s infinite;
+  }
+
+  .css{
+    max-width: 110px; 
+    position: absolute; 
+    top: 780px;
+    left: 900px; 
+
+    animation: troid-shake1 12s infinite;
+  }
+
+
+  .excel{
+    max-width: 110px; 
+    position: absolute; 
+    top: 340px;
+    left: 40px; 
+    animation: troid-shake1 13s infinite;
+  }
+
+
+  .html{
+    max-width: 110px; 
+    position: absolute; 
+    top: 160px;
+    left: 340px;
+    z-index: 1; 
+    animation: troid-shake1 14s infinite;
+  }
+
+  .js{
+    max-width: 110px; 
+    position: absolute; 
+    top: 350px;
+    left: 1760px;
+    z-index: 1; 
+    animation: troid-shake1 9s infinite;
+  }
+
+  .python{
+    max-width: 110px; 
+    position: absolute; 
+    top: 760px;
+    left: 1660px;
+    z-index: 1; 
+    animation: troid-shake1 8s infinite;
+  }
+
+  .r{
+    max-width: 110px; 
+    position: absolute; 
+    top: 540px;
+    left: 1080px;
+    z-index: 1; 
+    animation: troid-shake1 7s infinite;
+  }
+
+  .react{
+    max-width: 110px; 
+    position: absolute; 
+    top: 800px;
+    left: 1130px;
+    z-index: 1; 
+    animation: troid-shake1 7s infinite;
+  }
+
+  .sql{
+    max-width: 110px; 
+    position: absolute; 
+    top: 100px;
+    left: 1180px;
+    z-index: 1; 
+    animation: troid-shake1 15s infinite;
+  }
+
+  

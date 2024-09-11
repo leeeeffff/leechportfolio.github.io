@@ -1,0 +1,20 @@
+.cert-item {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'BemirsDemo', sans-serif;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    color: #43766C;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
