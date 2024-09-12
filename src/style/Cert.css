@@ -1,3 +1,4 @@
+
 .Cert-container {
     position: relative;
     margin-top: 20px;
@@ -10,13 +11,7 @@
     overflow: hidden; 
   }
   
-
-
-.cert {
-    font-size: 10rem;
-    color: #333;
-    font-family: 'BemirsDemo', sans-serif;
-    margin-bottom: 0px;
-    margin-top: 320px;
-    z-index: 10;
+  .spacer {
+    height: 500px; 
   }
+

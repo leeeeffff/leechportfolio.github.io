@@ -5,7 +5,8 @@ import Cert_part from '../components/Cert_part'
 const Cert = () => {
   return (
     <div className='Cert-container'>
-        <p className='cert'>Certificates</p>
+        
+        <div className='spacer'></div>
         <Cert_part/>
     </div>
   )

@@ -1,20 +1,55 @@
+@font-face {
+    font-family: 'CsClaireMono';
+    src: url('../fonts/CsClaireMonoDemoRegular-0vdyX.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .cert-item {
-    width: 80%;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin: 50px auto;
+    position: relative;
+    width: 600px;
+    height: auto;
+
+    padding: 10px;
     text-align: center;
     font-family: 'BemirsDemo', sans-serif;
+    transform: scale(2);
+  }
+  .cert {
+    font-size: 5rem;
+    color: #333;
+    font-family: 'BemirsDemo', sans-serif;
+    margin-top:50px;
+    z-index: 10;
+  }
+  .cert-item1 {
+    background-color: #fff;
+  }
+
+  .Cert_part_container{
+    align-items: center;
+    margin-top: 1000px;
+  }
+
+  .Google {
+    height: 200px;
+    width: auto;
+  }
+
+  .Microsoft {
+    height: 200px;
+    width: auto
   }
   
   h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #43766C;
   }
   
   p {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     color: #333;
+    font-weight: bold;
+    font-family: 'CsClaireMono', sans-serif;
   }
   
