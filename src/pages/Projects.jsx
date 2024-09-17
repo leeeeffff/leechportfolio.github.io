@@ -49,47 +49,31 @@ const Projects = () => {
 
       <div className='block-container'>
         <Link to='/projects/projectpluto' ref={leftBlockRefs[0]} className='block left-block'>
-          <p className='emoji'>🌑</p>
-          <p1 className='text'>Project Pluto</p1>
+          <p1 className='text12'>Project Pluto</p1>
         </Link>
         <Link to='/projects/toohak' ref={rightBlockRefs[0]} className='block right-block'>
-          <p className='emoji1'>🧾</p>
-          <p1 className='text1'>TOOHAK</p1>
+          <p1 className='text12'>TOOHAK</p1>
         </Link>
       </div>
 
       <div className='block-container'>
         <Link to='/projects/drive' ref={leftBlockRefs[1]} className='block left-block'>
-          <p className='emoji1'>👾</p>
-          <p1 className='text1'>Drive</p1>
+          <p1 className='text12'>Drive</p1>
         </Link>
         <Link to='/projects/unifood' ref={rightBlockRefs[1]} className='block right-block'>
-        <p className='emoji2'>🍜</p>
-        <p1 className='text2'>Uni-Food</p1>
+        <p1 className='text12'>Uni-Food</p1>
         </Link>
       </div>
 
       <div className='block-container'>
-        <Link to='/projects/cyclistic' ref={leftBlockRefs[2]} className='block left-block'>
-          <p className='emoji11'>🚲</p>
-          <p1 className='text11'>cyclistic Data analytics report </p1>
+      <Link to='/projects/toromart' ref={rightBlockRefs[3]} className='block left-block'>
+          <p1 className='text12'>toromart analysis</p1>
         </Link>
         <Link to='/projects/bcg' ref={rightBlockRefs[2]} className='block right-block'>
-          <p className='emoji12'>🤝</p>
           <p1 className='text12'>bcg consulting report</p1>
         </Link>
       </div>
 
-      <div className='block-container'>
-        <Link to='/projects/airbnb' ref={leftBlockRefs[3]} className='block left-block'>
-          <p className='emoji13'>🏨</p>
-          <p1 className='text14'>Airbnb Analysis</p1>
-        </Link>
-        <Link to='/projects/toromart' ref={rightBlockRefs[3]} className='block right-block'>
-          <p className='emoji14'>🛒</p>
-          <p1 className='text13'>toromart analysis</p1>
-        </Link>
-      </div>
 
       <div className="line1"></div>
     </div>

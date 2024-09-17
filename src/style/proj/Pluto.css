@@ -1,0 +1,170 @@
+.Pluto-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 50px;
+  background-color: #F9F7EA;
+  min-height: 89vh; 
+  overflow: hidden; 
+}
+
+.pluto {
+  font-size: 4rem;
+  color: #333;
+  font-family: 'BemirsDemo', sans-serif;
+  margin-top: -470px;
+  z-index: 10;
+  position: absolute; 
+  animation: popup1 2s ease-in-out forwards;
+}
+
+.back-arrow {
+  position: fixed; 
+  top: 20px; 
+  left: 30px; 
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  overflow: hidden;
+  z-index: 1000; 
+}
+
+.back-arrow {
+  margin-bottom: 0;
+}
+
+.arrow-left {
+  display: inline-block;
+}
+
+.arrow-left span {
+  display: block;
+  width: 20px;
+  height: 25px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(-45deg);
+  margin-top: 90px; 
+  margin-left: 30px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+
+}
+
+.back-text {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  margin-top: 90px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+  font-family: 'BemirsDemo', sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.back-arrow:hover .back-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.back-arrow:hover .arrow-left span {
+  border-color: #555555;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  margin-top: -540px;
+  margin-left: -900px;
+  position:relative;
+  animation: popup2 2s ease-in-out forwards;
+}
+
+.images img {
+  width: auto; 
+  height: 80px; 
+  margin-right: 220px; 
+  position:relative;
+}
+
+.images img:last-child {
+  margin-right: 0;
+}
+
+.left-column {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.6;
+  margin-top: -110px; /* Space above the text */
+  max-width: 630px;
+  animation: popup1 4s ease-in-out forwards;
+}
+
+.hey{
+  font-size: 16px;
+}
+
+.check-button {
+  display: inline-block;
+  margin-top: 20px; /* Space above the button */
+  padding: 12px 264px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-family: 'BemirsDemo', sans-serif;
+  transition: background-color 0.3s ease;
+  position: relative;
+  margin-bottom: -200px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.check-button:hover {
+  background-color: #555;
+}
+
+.plutoimg {
+  height: 500px;
+  width: auto;
+  margin-top: 180px;
+  margin-right: -230px;
+  border-radius: 20px;
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.5);
+  animation: popup2 4s ease-in-out forwards;
+}
+
+.nep1 {
+  max-width: 300px; 
+  position: absolute; 
+  top: 610px;
+  left: 220px; 
+  animation: troid-shake 10s infinite;
+  animation: popup1 6s ease-in-out forwards;
+}
+
+@keyframes popup1 {
+  0% {
+    transform: translateX(-1000px);
+  }
+  70% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popup2 {
+  0% {
+    transform: translateX(1500px);
+  }
+  70% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

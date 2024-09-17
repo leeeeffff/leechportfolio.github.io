@@ -1,0 +1,18 @@
+.Uni-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F7EA;
+    min-height: 89vh; 
+    overflow: hidden; 
+  }
+
+  .nep4 {
+    max-width: 300px; 
+    position: absolute; 
+    top: 610px;
+    left: 210px; 
+    animation: troid-shake 10s infinite;
+    animation: popup1 6s ease-in-out forwards;
+  }

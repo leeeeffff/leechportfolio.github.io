@@ -1,0 +1,9 @@
+.Toromart-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F7EA;
+    min-height: 89vh; 
+    overflow: hidden; 
+  }

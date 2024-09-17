@@ -1,0 +1,107 @@
+.Toohak-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F7EA;
+    min-height: 89vh; 
+    overflow: hidden; 
+  }
+
+  .back-arrow {
+    position: fixed; 
+    top: 20px; 
+    left: 30px; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    z-index: 1000; 
+  }
+  
+  .back-arrow {
+    margin-bottom: 0;
+  }
+  
+  .arrow-left {
+    display: inline-block;
+  }
+  
+  .arrow-left span {
+    display: block;
+    width: 20px;
+    height: 25px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: rotate(-45deg);
+    margin-top: 90px; 
+    margin-left: 30px;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .back-text {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    margin-top: 90px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+    font-family: 'BemirsDemo', sans-serif;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .back-arrow:hover .back-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .back-arrow:hover .arrow-left span {
+    border-color: #555555;
+  }
+  
+  .nep2 {
+    max-width: 390px; 
+    position: absolute; 
+    top: 650px;
+    left: 170px; 
+    animation: troid-shake 10s infinite;
+    animation: popup1 6s ease-in-out forwards;
+  }
+
+  .images1 {
+    display: flex;
+    align-items: center;
+    margin-top: -540px;
+    margin-left: 100px;
+    left: -400px;
+    position:relative;
+    position: relative;
+    animation: popup2 2s ease-in-out forwards;
+  }
+
+  .images1 img {
+    width: auto; 
+    height: 80px; 
+    margin-right: 280px; 
+    position:relative;
+  }
+  
+  .images1 img:last-child {
+    margin-right: 0;
+    position: relative;
+  }
+  
+  .plutoimg1 {
+    position: relative;
+    height: 500px;
+    width: auto;
+    margin-top: 180px;
+    margin-right: -630px;
+    border-radius: 20px;
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.5);
+    animation: popup2 4s ease-in-out forwards;
+  }

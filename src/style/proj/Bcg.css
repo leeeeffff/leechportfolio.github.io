@@ -1,0 +1,42 @@
+.BCG-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px;
+    background-color: #F9F7EA;
+    min-height: 89vh; 
+    overflow: hidden; 
+  }
+
+  .plutoimg3 {
+    position: relative;
+    height: 580px;
+    width: auto;
+    margin-top: 180px;
+    top: -100px;
+    right: 0px;
+    border-radius: 20px;
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.5);
+    animation: popup2 4s ease-in-out forwards;
+  }
+
+  .nep6 {
+    max-width: 250px; 
+    position: absolute; 
+    top: 570px;
+    rotate: -95deg;
+    left: 200px; 
+    animation: popup5 6s ease-in-out forwards;
+  }
+
+  @keyframes popup5 {
+    0% {
+      transform: translateY(-700px);
+    }
+    70% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
